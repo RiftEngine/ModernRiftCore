@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageReleaseNotes>Release v0.0.2.1-dev-122822: remove Game constructor</PackageReleaseNotes>
-		<Version>0.0.2.1-dev-122822</Version>
+		<PackageReleaseNotes>Release v0.0.2.2-dev-122822: remove Game constructor</PackageReleaseNotes>
+		<Version>0.0.2.2-dev-122822</Version>
 
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
