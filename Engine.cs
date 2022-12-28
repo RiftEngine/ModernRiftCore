@@ -36,11 +36,11 @@
         {
             if (!isInitialized)
             {
+                GameReference._Initialize();
                 isInitialized = true;
                 Console.BackgroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.BackgroundColor);
                 Console.ForegroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.TextColor);
                 Console.Clear();
-                GameReference._Initialize();
                 return;
             }
 
