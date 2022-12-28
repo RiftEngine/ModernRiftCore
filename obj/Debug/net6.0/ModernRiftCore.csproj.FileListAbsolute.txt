@@ -1,0 +1,12 @@
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.csproj.AssemblyReference.cache
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.AssemblyInfoInputs.cache
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.AssemblyInfo.cs
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.csproj.CoreCompileInputs.cache
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\bin\Debug\net6.0\ModernRiftCore.deps.json
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\bin\Debug\net6.0\ModernRiftCore.dll
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\bin\Debug\net6.0\ModernRiftCore.pdb
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.dll
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\refint\ModernRiftCore.dll
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ModernRiftCore.pdb
+D:\Users\REMCodes\Desktop\ModernRift\Core\ModernRiftCore\obj\Debug\net6.0\ref\ModernRiftCore.dll
