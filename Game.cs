@@ -86,11 +86,11 @@ namespace Rift.ModernRift.Core
             running = true;
             Start();
             // Add the prompt directive to the messagehandler
-            MessageHandler.AddDirective(new InlineConsoleDirective(() => { return configuration.Prompt; }, true), "tick");
+            MessageHandler.AddDirective(new InlineConsoleDirective(() => { return configuration.Prompt; }, true), "update");
             while (running)
             {
                 Update();
-                MessageHandler.AddMessage("tick");
+                MessageHandler.AddMessage("update");
                 MessageHandler.SendMessages();
 
                 string command = Console.ReadLine();
