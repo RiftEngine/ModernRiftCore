@@ -40,7 +40,7 @@ namespace Rift.ModernRift.Core
         /// </summary>
         public void RemoveCommand(Command command)
         {
-            if(command.GetType() != typeof(QuitCommand))
+            if (command.GetType() != typeof(QuitCommand))
             {
                 commands.Remove(command);
             }
