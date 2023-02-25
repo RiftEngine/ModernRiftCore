@@ -8,7 +8,7 @@ namespace Rift.ModernRift.Core
 {
     public class Game
     {
-        public readonly Configuration configuration;
+        public Configuration configuration;
 
         private List<Command> commands;
 
@@ -20,39 +20,24 @@ namespace Rift.ModernRift.Core
         private bool running = false;
 
         /// <summary>
-        /// Initializes a new Game with a specific configuration
+        /// Initializes a new Game
         /// </summary>
-        /// <param name="configuration">The configuration to use.</param>
-        public Game(Configuration configuration)
+        public Game()
         {
-            this.configuration = configuration;
             commands = new List<Command>() { new ClearCommand(), new HelpCommand(), new QuitCommand() };
         }
-        
-        public Game(Configuration configuration, List<Command> commands)
-        {
-            this.configuration = configuration;
-            this.commands = commands;
-            bool hasQuitCommand = false;
-            foreach(Command c in commands)
-            {
-                if(c.GetType() == typeof(QuitCommand))
-                {
-                    hasQuitCommand = true;
-                }
-            }
 
-            if(!hasQuitCommand)
-            {
-                this.commands.Add(new QuitCommand());
-            }
-        }
-
+        /// <summary>
+        /// Adds a command to the list of commands
+        /// </summary>
         public void AddCommand(Command command)
         {
             commands.Add(command);
         }
 
+        /// <summary>
+        /// Removes a command from the list of commands
+        /// </summary>
         public void RemoveCommand(Command command)
         {
             if(command.GetType() != typeof(QuitCommand))

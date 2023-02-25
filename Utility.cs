@@ -21,6 +21,13 @@ namespace Rift.ModernRift.Core
         public ConfigurationIncompleteException(string message, Exception inner) : base(message, inner) { }
     }
 
+    public class ConfigurationNotSetException : Exception
+    {
+        public ConfigurationNotSetException() { }
+        public ConfigurationNotSetException(string message) : base(message) { }
+        public ConfigurationNotSetException(string message, Exception inner) : base(message, inner) { }
+    }
+
     public class InvalidAliasException : Exception
     {
         public InvalidAliasException() { }

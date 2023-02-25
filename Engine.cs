@@ -36,12 +36,17 @@
         {
             if (!isInitialized)
             {
-                isInitialized = true;
-                Console.BackgroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.BackgroundColor);
-                Console.ForegroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.TextColor);
-                Console.Clear();
                 GameReference._Initialize();
-                return;
+                if (GameReference.configuration != null)
+                {
+                    isInitialized = true;
+                    Console.BackgroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.BackgroundColor);
+                    Console.ForegroundColor = ConsoleManager.StringToConsoleColor(GameReference.configuration.TextColor);
+                    Console.Clear();
+                    return;
+                }
+
+                throw new ConfigurationNotSetException("The configuration was not set.");
             }
 
             throw new GameAlreadyInitializedException("The game has already been initialized.");
