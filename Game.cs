@@ -65,6 +65,8 @@ namespace Rift.ModernRift.Core
             }
         }
 
+        #region Runtime Methods
+
         /// <summary>
         /// Backend initialization method, called by the game engine. You should never need to reference this method.
         /// </summary>
@@ -89,15 +91,16 @@ namespace Rift.ModernRift.Core
             MessageHandler.AddDirective(new InlineConsoleDirective(() => { return configuration.Prompt; }, true), "update");
             while (running)
             {
+                MessageHandler.SendMessage("update");
                 Update();
-                MessageHandler.AddMessage("update");
-                MessageHandler.SendMessages();
 
                 string command = Console.ReadLine();
                 foreach(Command c in commands)
                 {
-                    c.HandlePrompt(command);
+                    c.HandlePrompt(command.ToLower().Trim());
                 }
+
+                MessageHandler.SendMessages();
             }
         }
 
@@ -124,5 +127,7 @@ namespace Rift.ModernRift.Core
         /// Override this method to run code when the game is being stopped. Do not directly call this method, instead use Engine.Stop().
         /// </summary>
         public virtual void Stop() { }
+
+        #endregion
     }
 }
