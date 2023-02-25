@@ -207,4 +207,9 @@
 
         public ClearDirective(bool isProtected) : base(() => { if (enabled) Console.Clear(); }, isProtected) { }
     }
+
+    public sealed class SaveGameStateDirective : Directive
+    {
+        public SaveGameStateDirective() : base(() => { }) { }
+    }
 }
