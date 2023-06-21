@@ -58,6 +58,22 @@ namespace Rift.ModernRift.Core
         public void _Initialize()
         {
             Initialize();
+
+            if (configuration == null) {
+                try {
+                    configuration = new Configuration.ConfigurationBuilder().FromConfigFile("configuration.json").Build();
+                } catch {
+                    try {
+                        configuration = new Configuration.ConfigurationBuilder().FromConfigFile("config.json").Build();
+                    } catch {
+                        try {
+                            configuration = new Configuration.ConfigurationBuilder().FromConfigFile("cf.json").Build();
+                        } catch {
+                            Engine.PrintSystemError("Could not automatically find configuraton file.");
+                        }
+                    }
+                }
+            }
         }
         
         /// <summary>
