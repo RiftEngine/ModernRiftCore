@@ -86,5 +86,17 @@
 
             throw new GameNotRunningException("The game is not running");
         }
+
+        public static void PrintSystemMessage(string message) {
+            Console.WriteLine("ModernRift System Message: "+message);
+        }
+
+        public static void PrintSystemError(string error) {
+            Console.Error.WriteLine("ModernRift System Error: " + error);
+        }
+        
+        public static void PrintSystemError(Exception error) {
+            Console.Error.WriteLine("ModernRift System Error: " + error.Message);
+        }
     }
 }

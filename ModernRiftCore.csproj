@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageReleaseNotes>Release v0.1.1-alpha</PackageReleaseNotes>
-		<Version>0.1.1-alpha</Version>
+		<PackageReleaseNotes>Release v0.1.2-alpha</PackageReleaseNotes>
+		<Version>0.1.2-alpha</Version>
 
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
